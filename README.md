@@ -1,4 +1,7 @@
 # SD-Cabinet-Medical
+eeee
+eeee
+eee
 
 Dezvoltați (analiză, proiectare, implementare) o aplicație desktop care poate fi utilizată într-un cabinet medical.
 Aplicația va avea 3 tipuri de utilizatori: medic, asistent și administrator.
