@@ -1,15 +1,13 @@
 # SD-Cabinet-Medical
-eeee
-eeee
-eee
+
 
 Dezvoltați (analiză, proiectare, implementare) o aplicație desktop care poate fi utilizată într-un cabinet medical.
 Aplicația va avea 3 tipuri de utilizatori: medic, asistent și administrator.
 
 Utilizatorii de tip medic pot efectua următoarele operații după autentificare:
-[] Vizualizarea și actualizarea (simptome, diagnostic, tratament) fișelor medicale ale propriilor pacienți;
-[] Filtrarea propriilor pacienți după următoarele criterii: diagnostic, tratament;
-[] Căutarea unui pacient după nume;
+❖ Vizualizarea și actualizarea (simptome, diagnostic, tratament) fișelor medicale ale propriilor pacienți;
+❖ Filtrarea propriilor pacienți după următoarele criterii: diagnostic, tratament;
+❖ Căutarea unui pacient după nume;
 ❖ Specificarea propriului program de lucru și vizualizarea propriului program de consultații.
 
 Utilizatorii de tip asistent pot efectua următoarele operații după autentificare:
