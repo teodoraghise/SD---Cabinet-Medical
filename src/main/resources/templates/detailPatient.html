@@ -1,0 +1,111 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" lang="">
+<body style="background-color: #F0F0F0;">
+<head>
+    <title> List of patients </title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: #ffaa00;
+        }
+    </style>
+</head>
+
+<div align="center">
+    <table border="3" cellpadding="5" bgcolor="#f8f8ff" width="750">
+
+        <tr align="right">
+
+            <th colspan="4" height="150">
+                <h1 align="center">Teatru Cluj Napoca</h1>
+                <form method="get" action="/search">
+                    <input type="text" name="keyword"/>
+                    <button type="submit">Cautate</button>
+                </form>
+                <a href="/patients" class="btn btn-info btn-sm">
+                    <b>Pagina principala</b>
+                </a>
+
+            </th>
+        </tr>
+        <tr th:each="patient : ${detailPatient} " style="font-size: 30px">
+            <td th:text="${patient.firstName}" >firstName</td>
+        </tr>
+
+        <tr align="left">
+            <th>Premiere</th>
+
+        </tr>
+
+        <tr th:each="patient : ${detailPatient} " style="font-size: 30px">
+            <td th:text="${patient.lastName}" >lastName</td>
+        </tr>
+
+        <tr align="left">
+            <th>Premiere</th>
+
+        </tr>
+
+        <tr th:each="patient : ${detailPatient} " style="font-size: 30px">
+            <td th:text="${patient.symptoms}" >symptoms</td>
+        </tr>
+        <tr align="left">
+            <th>Premiere</th>
+
+        </tr>
+
+
+        <tr th:each="patient : ${detailPatient} " style="font-size: 30px">
+            <td th:text="${patient.diagnostic}" >diagnostic</td>
+        </tr>
+        <tr align="left">
+            <th>Premiere</th>
+
+        </tr>
+
+        <tr th:each="patient : ${detailPatient} " style="font-size: 30px">
+            <td th:text="${patient.treatment}" >treatment</td>
+        </tr>
+
+
+<!--        <tr align="left">-->
+<!--            <th>Durata spectacolului</th>-->
+
+<!--        </tr>-->
+<!--        <tr th:each="show : ${detailShow} ">-->
+<!--            <td>-->
+<!--                <a href th:text="${show.opening}">hour</a>-->
+<!--            </td>-->
+<!--        </tr>-->
+
+
+<!--        <tr align="left">-->
+<!--            <th>Descriere</th>-->
+<!--        </tr>-->
+<!--        <tr th:each="show : ${detailShow}">-->
+<!--            <td th:text="${show.description}" height="100">description</td>-->
+<!--        </tr>-->
+
+<!--        <tr align="left">-->
+<!--            <th>Pretul biletelor</th>-->
+<!--        </tr>-->
+<!--        <tr><td> <p>-->
+<!--        30 lei, 25 lei, 15 lei, 10 lei (în funcţie de locul din sala de spectacol);-->
+
+<!--            7,5 lei - reducere pentru elevi, studenţi şi pensionari.</p></td>-->
+<!--        </tr>-->
+
+<!--        <tr align="left">-->
+<!--            <th>url</th>-->
+<!--        </tr>-->
+<!--        <tr th:each="show : ${detailShow}">-->
+<!--            <td th:text="${show.url}" height="400">url</td>-->
+<!--        </tr>-->
+
+    </table>
+</div>
+</body>
+</html>

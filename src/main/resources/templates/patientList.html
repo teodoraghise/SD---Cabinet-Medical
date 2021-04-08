@@ -1,0 +1,93 @@
+<html  xmlns="http://www.w3.org/1999/html" lang="">
+<body style="background-color: #F0F0F0;">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>List Patients</title>
+
+
+</head>
+
+<!--<div align="center" >-->
+<!--    <h2> List Shows </h2>-->
+<!--    <form method="get" action="/search">-->
+<!--        <input type="text" name="keyword"/>-->
+<!--        <input type="submit" name="Search"/>-->
+<!--    </form>-->
+<!--    <a href="addShow">Add a new show</a>-->
+<!--    &lt;!&ndash;    <a href="detailShow"> simpleShowDetailLink </a>&ndash;&gt;-->
+<!--</div>-->
+
+<div align="center">
+    <table border="3" cellpadding="5" bgcolor="#f8f8ff" width="750">
+        <tr align="right">
+
+            <th colspan="4" height="150">
+                <h1 align="center">Teatru Cluj Napoca</h1>
+                <form method="get" action="/search">
+                    <input type="text" name="keyword"/>
+                    <button type="submit">Cautate</button>
+                </form>
+                <a href="addPatient" class="btn btn-info btn-sm">
+                    <b>Adauga un nou patient</b>
+                </a>
+            </th>
+        </tr>
+
+<!--        <tr bgcolor="#008b8b" style="color:whitesmoke;" align="center" border="2">-->
+<!--            <th>Titlu spectacol</th>-->
+<!--            <th>Data Premierei</th>-->
+<!--            <th>Ora</th>-->
+<!--            &lt;!&ndash;            <th>Date2</th>&ndash;&gt;-->
+<!--            <th>Optiuni</th>-->
+<!--        </tr>-->
+
+<!--        <tr th:each="patient : ${patientList} " data-th-accept="patient">-->
+<!--            &lt;!&ndash;            <td th:text="${show.show_name}">name</td>&ndash;&gt;-->
+<!--            <td>-->
+<!--                <a th:href="@{/detail/{id}(id=${patient.id})}">[[${patient.firstName}]]</a>-->
+<!--            </td>-->
+<!--            &lt;!&ndash;            <td th:text="${show.opening}">date</td>&ndash;&gt;-->
+
+
+<!--            <td th:text="${patient.lastName}">lastName</td>-->
+<!--            <td th:text="${patient.treatment}">treatment</td>-->
+<!--            &lt;!&ndash;            <td th:text="${#temporals.format(show.date2, 'dd-MM-yyyy')}">date2</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td align="center">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <a th:href="@{/edit/(id=${patient.id})}" class="btn btn-info btn-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <b>Editare</b>&ndash;&gt;-->
+<!--&lt;!&ndash;                </a>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                <a th:href="@{/delete/{id}(id=${patient.id})}"&ndash;&gt;-->
+<!--&lt;!&ndash;                   class="btn btn-danger btn-sm"&ndash;&gt;-->
+<!--&lt;!&ndash;                   onclick="if(!(confirm('Sunteti sigur?'))) return false">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <b>Stergere</b>&ndash;&gt;-->
+<!--&lt;!&ndash;                </a>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                &lt;!&ndash;                <a th:href="@{/delete/{id}(id=${show.id})}">Delete</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--        </tr>-->
+    </table>
+</div>
+
+
+<!--<div align="center">-->
+<!--    Total Items: [[${totalItems}]] - Page [[${currentPage}]] of [[${totalPages}]] - -->
+
+<!--    &lt;!&ndash;    <span th:each="i : ${#numbers.sequence(1,totalPages)}">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <span>[[${i}]]</span>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <a th:href="@{/page/{i}(i=${i})}">[[${i}]]</a>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    </span>&ndash;&gt;-->
+<!--</div>-->
+
+</body>
+</html>

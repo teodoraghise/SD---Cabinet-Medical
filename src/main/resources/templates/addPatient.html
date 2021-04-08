@@ -1,0 +1,184 @@
+<!--<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" lang="">-->
+
+<!--<body>-->
+
+<!--<div class="container">-->
+<!--    <h2> Add a new show </h2>-->
+
+<!--    <form action="#" th:action="@{/add}"-->
+<!--          th:object="${showInsertDto}"  method="post">-->
+
+<!--        <tr>-->
+<!--            <td >Product ID:</td>-->
+
+<!--                <input  type="hidden" th:field="*{id}" />-->
+
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </br>-->
+<!--        <tr>-->
+<!--            <td> Data</td>-->
+<!--            <td>-->
+<!--                <input type="number" th:field="*{date}"/>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </br>-->
+<!--        <tr>-->
+<!--            <td> Data2</td>-->
+<!--            <td>-->
+<!--                <input type="date" th:field="*{date2}"/>-->
+<!--            </td>-->
+<!--        </tr>-->
+
+<!--&lt;!&ndash;        <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td> localDate</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="datetime-local" th:field="*{localDate}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--&lt;!&ndash;        </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td> offsetDateTime</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="date" th:field="*{offsetDateTime}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--&lt;!&ndash;        </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        </br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>Hour:</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td><input type="number" th:field="*{hour}"/></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        </tr>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td>Hour:</td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <td><input type="time" th:field="*{hour2}"/></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        </tr>&ndash;&gt;-->
+<!--        </br>-->
+<!--        <tr>-->
+<!--            <td>Name:</td>-->
+<!--            <td><input type="text" th:field="*{show_name}"/></td>-->
+<!--                <span th:if="${#fields.hasErrors('show_name')}" th:errors="*{show_name}">test name</span>-->
+
+<!--        </tr>-->
+<!--        </br>-->
+<!--        <tr>-->
+<!--            <td>description</td>-->
+<!--            <td><input type="text" th:field="*{description}"/></td>-->
+<!--        </tr>-->
+
+<!--&lt;!&ndash;        <tr>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <label th:for="genre">genre</label>&ndash;&gt;-->
+<!--&lt;!&ndash;            <select th:field="*{genre}">&ndash;&gt;-->
+<!--&lt;!&ndash;                <option th:each="showGenre : ${showGenre}"&ndash;&gt;-->
+<!--&lt;!&ndash;                th:text="${showGenre.option}"&ndash;&gt;-->
+<!--&lt;!&ndash;                th:value:="${showGenre}">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </option>&ndash;&gt;-->
+<!--&lt;!&ndash;            </select>&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--&lt;!&ndash;        </tr>&ndash;&gt;-->
+<!--        </br>-->
+<!--        <tr>-->
+<!--            <td colspan="2">-->
+<!--                <button type="submit" >Save</button>-->
+<!--            </td>-->
+<!--        </tr>-->
+
+<!--    </form>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="">
+<body style="background-color: #F0F0F0;">
+<head>
+    <title> Add Show </title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+</head>
+
+
+<div align="center">
+    <table border="3" cellpadding="5" bgcolor="#f8f8ff" width="500">
+        <h2> Formular spectacol  </h2>
+        <a href="/patient" class="btn btn-info btn-sm">
+            <b>Pagina Principala</b>
+        </a>
+
+
+        <form action="#" th:action="@{/add}"
+              th:object="${patientInsertDto}" method="post">
+
+
+            <tr>
+                <td>Nume</td>
+                <td><input type="text" th:field="*{firstName}"/></td>
+            </tr>
+            <tr>
+                <td>Prenume</td>
+                <td><input type="text" th:field="*{lastName}"/></td>
+            </tr>
+            <tr>
+                <td>symptoms</td>
+                <td><input type="text" th:field="*{symptoms}"/></td>
+            </tr>
+            <tr>
+                <td>diagnostic</td>
+                <td><input type="text" th:field="*{diagnostic}"/></td>
+            </tr>
+            <tr>
+                <td>treatment</td>
+                <td><input type="text" th:field="*{treatment}"/></td>
+            </tr>
+
+
+<!--            <tr>-->
+<!--                <td>Data premierei:</td>-->
+<!--                <td><input type="date" th:field="*{data}"/></td>-->
+<!--            </tr>-->
+
+
+<!--            <tr>-->
+<!--                <td>Ora:</td>-->
+<!--                <td><input type="time" th:field="*{hour}"/></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Durata</td>-->
+<!--                <td>-->
+<!--                    <input type="radio" th:field="*{opening}" value="1 h">1:30h</input>-->
+<!--                    <input type="radio" th:field="*{opening}" value="2 h">2:30h</input>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Descriere:</td>-->
+<!--                <td>-->
+<!--                    <textarea name="content" rows="4" cols="50" th:field="*{description}">-->
+<!--                             </textarea><br/>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Se adreseaza publicului:</td>-->
+<!--                <td>-->
+<!--                <input type="radio" th:field="*{url}" value="Minor">Minor</input>-->
+<!--                <input type="radio" th:field="*{url}" value="Adult">Adult</input>-->
+<!--                </td>-->
+<!--            </tr>-->
+
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" class="btn btn-info col-2">Save</button>
+                </td>
+            </tr>
+
+
+        </form>
+    </table>
+</div>
+
+</body>
+</html>
